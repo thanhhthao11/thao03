@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="THchuong05.css">
+<link rel="stylesheet" href="THchuong05.js">
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Trang chủ</a></li>
+  <li>
+    <a href="#dao_tao">Đào tạo</a>
+    <ul>
+      <li><a href="#do_hoa">Đồ họa</a></li>
+      <li><a href="#web">Web</a></li>
+      <li><a href="#mang">Mạng</a></li>
+    </ul>
+  </li>
+  <li><a href="#dich_vu">Dịch vụ</a></li>
+  <li><a href="#lien_he">Liên hệ</a></li>
+</ul>
+
+<script>
+$(document).ready(function(){
+  $('ul li').hover(function(){
+    $(this).find('ul').stop().slideDown(200);
+  }, function(){
+    $(this).find('ul').stop().slideUp(200);
+  });
+
+  $('ul ul li').hover(function(){
+    $(this).css('background-color', '#2f6311');
+  }, function(){
+    $(this).css('background-color', '#f9f9f9');
+  });
+});
+</script>
+<img src="../image/truong.jpg" alt="truong IUH" style="width: 100%";>
+</body>
+</html>
